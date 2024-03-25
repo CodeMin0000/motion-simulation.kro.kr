@@ -13,6 +13,7 @@
 
         .wrap {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
@@ -24,6 +25,7 @@
             position: relative;
             width: 45%;
             height: 80vh;
+            margin-bottom: 2.5%;
             background: #000;
             border: 3px solid #fdfdfd;
             border-radius: 15px;
@@ -46,6 +48,21 @@
             font-size: 20px;
             line-height: 50px;
         }
+
+        .btn {
+            width: 8%;
+            height: 4%;
+            outline: none;
+            border: none;
+            background: #4fffbe;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        .btn:hover {
+            opacity: 0.75;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +72,8 @@
                 <p class="door-text">회전문</p>
             </div>
         </div>
+        
+        <button class="btn" onclick="location.href='/'">Previous</button>
     </div>
 
     <script>
